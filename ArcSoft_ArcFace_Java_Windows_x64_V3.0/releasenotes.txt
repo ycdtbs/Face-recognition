@@ -1,0 +1,66 @@
+﻿////////////////////////////////////////////////////////////////////////////////
+//                   ArcSoft FaceEngine SDK 		                      //        
+////////////////////////////////////////// /////////////////////////////////////
+
+Introduction:
+ArcSoft FaceEngine SDK provides the universal interfaces to detect the face information of face, like face detection, age estimation, gender estimation,face angle detection,face recognition.
+
+Publish date:
+2021-06-18
+
+Expire date:
+2022-06-18
+
+Version:
+3.0.3902020101.1
+
+Supported platform:
+WIN64
+
+Compile Options:
+default
+
+Dependency:
+None
+
+Known issues:
+None.
+
+File List:
+|---doc
+|   |---ARCSOFT_ARC_FACE_JAVA_DEVELOPER'S_GUIDE.pdf
+|---libs
+|   |--WIN64
+|   |   |---libarcsoft_face.dll                 Library
+|   |   |---libarcsoft_face_engine.dll          Library
+|   |   |---libarcsoft_face_engine_jni.dll      Library
+|   |--arcsoft-sdk-face-3.0.0.0.jar
+|---samplecode
+|   |---FaceEngineTest.java
+|---releasenotes.txt
+
+
+Change Logs:
+2019-12-17
+1、底层库升级到3.0版本
+2、更新活体、年龄、性别、人脸检测、人脸比对算法模型；
+3、IMAGE模式支持全角度以及单一角度；
+4、新增人证模式的人脸特征比对模型；
+5、新增一组接口，用于兼容更高精度的图像
+6、全角度枚举ASF_OP_0_HIGHER_EXT变更为ASF_OP_ALL_OUT；
+7、此版本对人脸特征模型进行了升级，导致与2.X版本的模型不匹配，需要对2.X版本的人脸库进行重新注册；
+8、活体检测推荐阈值变更，RGB：0.5  IR：0.7；
+
+2019-06-14
+底层库升级到2.2版本
+增加IR 活体检测
+开放RGB\IR活体阈值设置
+FT 开放算法层FaceId
+提升性能
+
+2019-04-01
+底层库升级到2.1版本
+支持活体功能
+
+2018-12-15
+Initial Version

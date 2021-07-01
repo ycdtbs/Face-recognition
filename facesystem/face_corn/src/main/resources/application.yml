@@ -1,0 +1,43 @@
+server:
+  port: 8081
+  max-http-header-size: 1048576
+spring:
+  jackson:
+    time-zone: GMT+8
+  jpa:
+    generate-ddl: true
+    database: mysql
+    show-sql: true
+    open-in-view: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 500
+        min-idle: 0
+    lettuce:
+      shutdown-timeout: 0
+  datasource:
+    url: jdbc:mysql://localhost:3306/face_warehouse?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: face-corn
+
+eureka:
+  client:
+    serviceUrl: #注册中心的注册地址
+      defaultZone: http://127.0.0.1:8888/eureka/
+
+face:
+  dllPath: 'D:/人脸识别系统/ArcSoft_ArcFace_Java_Windows_x64_V3.0/libs\WIN64'  #存放引擎文件的地址
+  appId: ''
+  sdkKey: ''
